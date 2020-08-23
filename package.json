@@ -1,10 +1,10 @@
 {
   "name": "@yingjie0904/zui",
-  "repository":"https://github.com/zhufengnodejs/zhufengreactui",
+  "repository":"https://github.com/yingjie0904/zui",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/zhufengnodejs"
+    "registry": "https://npm.pkg.github.com/yingjie0904"
   },
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": false,
   "dependencies": {
     "polished": "^3.6.5"
@@ -26,6 +26,9 @@
   "files": [
     "dist"
   ],
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
   "jest": {
     "collectCoverageFrom": [
       "!src/**/*.stories.tsx",

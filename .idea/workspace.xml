@@ -6,44 +6,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a57bcb5-f742-4526-b87e-ea66d2ac4cba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/zui.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.storybook/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.storybook/preview.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/__test__/button.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/button/button.stories.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/button/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/animation.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/global.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared/styles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/shared_test_/styles.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/Colors.stories.mdx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/Introduction.stories.tdx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/Typography.stories.mdx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/Welcome.stories.mdx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/code-brackets.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/colors.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/comments.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/direction.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/flow.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/plugin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/repo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/assets/stackalt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.build.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -106,8 +69,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+            <state relative-caret-position="270">
+              <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -144,15 +107,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/stories/Colors.stories.mdx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
@@ -168,6 +122,7 @@
       <find>wrapper</find>
       <find>storyshots</find>
       <find>repository</find>
+      <find>publishConfig</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -227,32 +182,6 @@
               <item name="zui" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="zui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="button" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="zui" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zui" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="stories" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -301,12 +230,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597804638027</updated>
-      <workItem from="1597804640022" duration="17552000" />
+      <workItem from="1597804640022" duration="18403000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17552000" />
+    <option name="totallyTimeSpent" value="18403000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -589,10 +518,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+        <state relative-caret-position="270">
+          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
         </state>
       </provider>
     </entry>
