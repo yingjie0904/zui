@@ -4,7 +4,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/yingjie0904"
   },
-  "version": "0.2.0",
+  "version": "0.2.4",
   "private": false,
   "dependencies": {
     "polished": "^3.6.5"
@@ -20,7 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public",
+    "build-storybook": "build-storybook --no-dll --quiet",
     "coverage": "react-scripts test --coverage --watchAll=false"
   },
   "files": [
