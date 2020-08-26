@@ -14,10 +14,10 @@ addParameters({
 });
 addDecorator(withA11y);
 addDecorator((story) => (
-    <>
+    <React.Fragment>
       <GlobalStyle />
       {story()}
-    </>
+    </React.Fragment>
 ));
 
 export const parameters = {
