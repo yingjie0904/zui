@@ -422,10 +422,10 @@ const StyledButton = styled.button<ButtonProps>`
 function Button(props: PropsWithChildren<ButtonProps>) {
     const { isLoading, loadingText, isLink, children } = props;
     const buttonInner = (
-        <>
+        <React.Fragment>
             <Text>{children}</Text>
             {isLoading && <Loading>{loadingText || "Loading..."}</Loading>}
-        </>
+        </React.Fragment>
     );
     const btnType = useMemo(() => {
         if (isLink) {
