@@ -7,8 +7,15 @@
   "version": "0.2.4",
   "private": false,
   "dependencies": {
-    "coveralls": "^3.1.0",
-    "polished": "^3.6.5"
+    "coveralls": "3.1.0",
+    "patch-package": "6.2.2",
+    "polished": "3.6.5",
+    "prismjs": "1.21.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-scripts": "3.4.3",
+    "styled-components": "5.1.1",
+    "typescript": "~3.7.2"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
@@ -64,10 +71,11 @@
     "@storybook/addon-storysource": "^6.0.12",
     "@storybook/addon-viewport": "^6.0.12",
     "@storybook/node-logger": "^6.0.12",
-    "@storybook/preset-create-react-app": "^3.1.4",
+    "@storybook/preset-create-react-app": "^2.1.1",
     "@storybook/react": "^6.0.12",
     "@types/styled-components": "^5.1.2",
     "babel-loader": "^8.1.0",
+    "react-docgen-typescript-loader": "3.7.2",
     "react-is": "^16.13.1",
     "styled-components": "^5.1.1"
   }
