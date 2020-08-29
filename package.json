@@ -7,6 +7,7 @@
   "version": "0.2.4",
   "private": false,
   "dependencies": {
+    "@types/prismjs": "^1.16.1",
     "coveralls": "3.1.0",
     "patch-package": "^6.2.2",
     "polished": "3.6.5",
@@ -47,7 +48,8 @@
     ]
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "react-app",
+    "no-unused-vars": "off"
   },
   "browserslist": {
     "production": [
