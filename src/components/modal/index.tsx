@@ -1,113 +1,88 @@
 import React, {
   PropsWithChildren,
-  CSSProperties,
   ReactNode,
   useMemo,
-  useState,
+  CSSProperties,
   useRef,
   useEffect,
 } from "react";
+import styled, { css } from "styled-components";
+import { typography } from "../shared/styles";
+import { modalOpenAnimate, modalCloseAnimate } from "../shared/animation";
 import { createPortal } from "react-dom";
-import { Button } from "../button";
+import Button from "../button";
 import { Icon } from "../icon";
-import styled, { css, keyframes } from "styled-components";
-import { color, typography } from "../shared/styles";
-import { darken, rgba, opacify } from "polished";
-import { easing } from "../shared/animation";
-
-export const modalOpenAnimate = keyframes`
-  0% {
-    opacity: 0;
-    transform: scaleY(0,0);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(1,1);
-    transform-origin: center;
-  }
-`;
-
-export const modalCloseAnimate = keyframes`
-  0% {
-    opacity: 0;
-    transform: scale(1,1);
-    transform-origin: center;
-  }
-  100% {
-    opacity: 0;
-    transform: scaleY(0,0);
-  }
-`;
+import { useStopScroll, useStateAnimation } from "../shared/hooks";
 
 const ModalWrapper = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1000;
 `;
 
 const ModalViewPort = styled.div<{ visible: boolean; delay: number }>`
-  background: #fff;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 2px 2px 4px #d9d9d9;
-  text-shadow: 1px 1px 4px #d9d9d9, -1px -1px 4px #fff;
-  margin: 0 auto;
-  min-width: 320px;
-  overflow: hidden;
-  padding: 8px;
-  position: relative;
-  top: 100px;
-  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-  width: 30%;
-  z-index: 1001;
-  ${(props) =>
+	background: #fff;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 2px 2px 4px #d9d9d9;
+	text-shadow: 1px 1px 4px #d9d9d9, -1px -1px 4px #fff;
+	margin: 0 auto;
+	min-width: 320px;
+	overflow: hidden;
+	padding: 8px;
+	position: relative;
+	top: 100px;
+	transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+	width: 30%;
+	z-index: 1001;
+	${(props) =>
     props.visible &&
     css`
-      animation: ${modalOpenAnimate} ${props.delay / 1000}s ease-in;
-    `}
-  ${(props) =>
+			animation: ${modalOpenAnimate} ${props.delay / 1000}s ease-in;
+		`}
+	${(props) =>
     !props.visible &&
     css`
-      animation: ${modalCloseAnimate} ${props.delay / 1000}s ease-in;
-    `}
+			animation: ${modalCloseAnimate} ${props.delay / 1000}s ease-in;
+		`}
 `;
 
 const ModalMask = styled.div`
-  background-color: rgba(0, 0, 0, 0.45);
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
+	background-color: rgba(0, 0, 0, 0.45);
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
 `;
 
 const CloseBtn = styled.div`
-  position: absolute;
-  right: 5px;
-  top: 5px;
+	position: absolute;
+	right: 5px;
+	top: 5px;
 `;
 
 const ConfirmWrapper = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  align-item: center;
-  padding: 10px;
+	display: flex;
+	justify-content: flex-end;
+	align-item: center;
+	padding: 10px;
 `;
 
 const ChildrenWrapper = styled.div`
-  min-height: 100px;
-  padding: 10px;
+	min-height: 100px;
+	padding: 10px;
 `;
 
 const TitleWrapper = styled.div`
-  height: 30px;
-  line-height: 30px;
-  font-size: ${typography.size.m2}px;
-  font-weight: ${typography.weight.bold};
-  padding: 5px;
+	height: 30px;
+	line-height: 30px;
+	font-size: ${typography.size.m2}px;
+	font-weight: ${typography.weight.bold};
+	padding: 5px;
 `;
 
 export type ModalProps = {
@@ -150,42 +125,6 @@ export type ModalProps = {
   /** 没点确认于取消，直接关闭的回调 */
   closeCallback?: () => void;
 };
-
-export function useStateAnimation(
-    parentSetState: (v: boolean) => void,
-    delay: number = 300
-): [boolean, (v: boolean) => void, () => void] {
-  const [state, setState] = useState(true);
-  const [innerClose, unmount] = useMemo(() => {
-    let timer: number;
-    let innerclose = (v: boolean) => {
-      setState(v);
-      timer = window.setTimeout(() => {
-        parentSetState(v);
-        setState(true);
-      }, delay);
-    };
-    let unmount = () => window.clearTimeout(timer);
-    return [innerclose, unmount];
-  }, [setState, parentSetState, delay]);
-  return [state, innerClose, unmount];
-}
-
-export function useStopScroll(state: boolean, delay: number, open?: boolean) {
-  if (open) {
-    let width = window.innerWidth - document.body.clientWidth;
-    if (state) {
-      document.body.style.overflow = "hidden";
-      document.body.style.width = `calc(100% - ${width}px)`;
-    } else {
-      //等动画渲染
-      setTimeout(() => {
-        document.body.style.overflow = "auto";
-        document.body.style.width = `100%`;
-      }, delay);
-    }
-  }
-}
 
 export function Modal(props: PropsWithChildren<ModalProps>) {
   const {
@@ -256,7 +195,9 @@ export function Modal(props: PropsWithChildren<ModalProps>) {
                     <Button
                         appearance="secondary"
                         onClick={() => {
-                          onCancel ? onCancel(setState) : setState(false);
+                          onCancel
+                              ? onCancel(setState)
+                              : setState(false);
                           if (callback) callback(false);
                         }}
                         style={{ marginLeft: "10px" }}
@@ -323,5 +264,7 @@ Modal.defaultProps = {
   closeButton: true,
   delay: 200,
   stopScroll: true,
-  btnSize: "default"
+  btnSize: "default",
 };
+
+export default Modal;
