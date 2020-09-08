@@ -1,5 +1,4 @@
 import React, {
-    PropsWithChildren,
     ReactNode,
     useState,
     useRef,
@@ -15,11 +14,9 @@ import { Progress } from "../progress";
 import { message } from "../message";
 import { Modal } from "../modal";
 import { Icon } from "../icon";
-import styled, { keyframes, css } from "styled-components";
-import { color, typography } from "../shared/styles";
-import { darken, rgba, opacify } from "polished";
-import { easing, iconSpin } from "../shared/animation";
-import { format } from "path";
+import styled, { css } from "styled-components";
+import { color } from "../shared/styles";
+import { iconSpin } from "../shared/animation";
 
 const btnStyle = {
     padding: "10px",
@@ -533,9 +530,6 @@ export function Upload(props: UploadProps) {
         }
     };
     const handleMouseUp = () => {
-        setMouseActive(false);
-    };
-    const handleMouseLeave = () => {
         setMouseActive(false);
     };
 

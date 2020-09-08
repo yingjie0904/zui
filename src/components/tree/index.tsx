@@ -1,18 +1,12 @@
 import React, {
-    PropsWithChildren,
-    ReactNode,
     CSSProperties,
     useMemo,
     useState,
     useRef,
     useEffect,
 } from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled  from 'styled-components';
 import { Icon } from '../icon';
-import { color, typography } from '../shared/styles';
-import { darken, rgba, opacify } from 'polished';
-import { easing } from '../shared/animation';
-import { format } from 'path';
 
 const originPadding = 24; //原始间距
 

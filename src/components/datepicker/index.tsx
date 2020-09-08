@@ -1,17 +1,15 @@
 import React, {
-    PropsWithChildren,
     CSSProperties,
     RefObject,
-    ReactNode,
     useMemo,
     useState,
     useRef,
     useEffect,
 } from "react";
-import styled, { keyframes, css } from "styled-components";
-import { color, typography } from "../shared/styles";
-import { darken, rgba, opacify } from "polished";
-import { easing, modalOpenAnimate, modalCloseAnimate } from "../shared/animation";
+import styled, { css } from "styled-components";
+import { color } from "../shared/styles";
+import { rgba } from "polished";
+import { modalOpenAnimate, modalCloseAnimate } from "../shared/animation";
 import { useStateAnimation } from "../shared/hooks"
 import { Button } from "../button";
 import { Icon } from "../icon";

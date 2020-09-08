@@ -10,7 +10,7 @@ import styled, { css } from "styled-components";
 import { typography } from "../shared/styles";
 import { modalOpenAnimate, modalCloseAnimate } from "../shared/animation";
 import { createPortal } from "react-dom";
-import Button from "../button";
+import {Button} from "../button";
 import { Icon } from "../icon";
 import { useStopScroll, useStateAnimation } from "../shared/hooks";
 

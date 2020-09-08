@@ -1,6 +1,6 @@
 import React, { useRef, PropsWithChildren, useEffect } from "react";
 import styled from "styled-components";
-import { color, typography } from "../shared/styles";
+import { color } from "../shared/styles";
 import Prism from "prismjs";
 
 require("prismjs/components/prism-typescript");

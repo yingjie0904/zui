@@ -4,8 +4,6 @@ import { Icon } from "../icon";
 import {
     withKnobs,
     text,
-    boolean,
-    color,
     select,
 } from "@storybook/addon-knobs";
 

@@ -8,8 +8,6 @@ import React, {
 } from "react";
 import styled, { keyframes } from "styled-components";
 import { color, typography } from "../shared/styles";
-import { darken, rgba, opacify } from "polished";
-import { easing } from "../shared/animation";
 
 export const progressFlash = keyframes`
   0% { opacity: 0.1;

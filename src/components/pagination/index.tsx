@@ -1,15 +1,11 @@
 import React, {
-    PropsWithChildren,
-    ReactNode,
     useMemo,
     useState,
     useEffect,
     CSSProperties,
 } from "react";
-import styled, { keyframes } from "styled-components";
-import { color, typography } from "../shared/styles";
-import { darken, rgba, opacify } from "polished";
-import { easing } from "../shared/animation";
+import styled from "styled-components";
+import { color } from "../shared/styles";
 import { Icon } from "../icon";
 import { Button } from "../button"
 

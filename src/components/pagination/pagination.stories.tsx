@@ -2,10 +2,6 @@ import React from "react";
 import { Pagination } from "./index";
 import {
     withKnobs,
-    text,
-    boolean,
-    color,
-    select,
     number,
 } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";

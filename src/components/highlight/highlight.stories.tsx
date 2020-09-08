@@ -2,9 +2,6 @@ import React from "react";
 import { Highlight } from "./index";
 import {
     withKnobs,
-    text,
-    boolean,
-    select,
 } from "@storybook/addon-knobs";
 
 export default {

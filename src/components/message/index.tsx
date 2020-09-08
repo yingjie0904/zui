@@ -1,5 +1,4 @@
 import React, {
-  PropsWithChildren,
   ReactNode,
   useMemo,
   useEffect,
@@ -11,8 +10,6 @@ import ReactDom, {
 import styled, { keyframes, css } from "styled-components";
 import { color, typography, messageBoxShadow } from "../shared/styles";
 import { Icon } from '../icon';
-import { darken, rgba, opacify } from "polished";
-import { easing } from "../shared/animation";
 
 export const messageOpenAnimate = keyframes`
   0% {

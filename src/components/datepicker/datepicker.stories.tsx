@@ -4,9 +4,6 @@ import {
     withKnobs,
     text,
     number,
-    boolean,
-    color,
-    select,
 } from "@storybook/addon-knobs";
 import { action } from "@storybook/addon-actions";
 
