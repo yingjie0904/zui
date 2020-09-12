@@ -1,7 +1,8 @@
 //  安装测试用例
 import React from "react";
 import { render, fireEvent, cleanup } from "@testing-library/react";
-import Button, { ButtonProps, btnPadding } from "../index";
+import { ButtonProps, btnPadding } from "../index";
+import { Button } from "../../button"
 import { color, typography } from "../../shared/styles";
 const defaultProps = {
     onClick: jest.fn(),

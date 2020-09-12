@@ -11,6 +11,17 @@ export const AvatarSize = {
     tiny: 16,
 };
 
+export interface AvatarProps extends HTMLAttributes<HTMLDivElement> {
+    /** 是否加载中*/
+    isLoading?: boolean;
+    /** 用户名*/
+    username?: string;
+    /** 图片地址 */
+    src?: null | string;
+    /** 头像大小 */
+    size?: keyof typeof AvatarSize;
+};
+
 const Image = styled.div<AvatarProps>`
   background: ${(props) => (!props.isLoading ? "transparent" : color.light)};
   border-radius: 50%;
@@ -97,16 +108,6 @@ const Initial = styled.div<AvatarProps>`
   `}
 `;
 
-export interface AvatarProps extends HTMLAttributes<HTMLDivElement> {
-    /** 是否加载中*/
-    isLoading?: boolean;
-    /** 用户名*/
-    username?: string;
-    /** 图片地址 */
-    src?: null | string;
-    /** 头像大小 */
-    size?: keyof typeof AvatarSize;
-};
 interface a11yProps {
     [key: string]: boolean | string;
 }
