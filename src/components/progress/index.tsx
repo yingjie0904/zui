@@ -8,18 +8,7 @@ import React, {
 } from "react";
 import styled, { keyframes } from "styled-components";
 import { color, typography } from "../shared/styles";
-
-export const progressFlash = keyframes`
-  0% { opacity: 0.1;
-    width: 0; 
-  }
-  20% { opacity: 0.5;
-    width: 0; 
-  } 
-  100% { opacity: 0;
-    width: 100%; 
-  }
-`;
+import { progressFlash } from "../shared/animation"
 
 const BarWrapper = styled.div`
   display: flex;

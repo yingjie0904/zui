@@ -10,6 +10,7 @@ import ReactDom, {
 import styled, { keyframes, css } from "styled-components";
 import { color, typography, messageBoxShadow } from "../shared/styles";
 import { Icon } from '../icon';
+import { iconSpin } from "../shared/animation";
 
 export const messageOpenAnimate = keyframes`
   0% {
@@ -34,14 +35,6 @@ export const messageCloseAnimate = keyframes`
   100% {
     opacity: 0;
     margin-top: -30px;
-  }
-`;
-export const iconSpin = keyframes`
-  0% {
-     transform: rotate(0deg);
-  }
-  100% {
-     transform: rotate(360deg);
   }
 `;
 
