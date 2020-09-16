@@ -2,7 +2,8 @@
   "name": "@yingjie0904/zui",
   "repository": "https://github.com/yingjie0904/zui",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/yingjie0904"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/@yingjie0904"
   },
   "version": "0.2.4",
   "private": false,
