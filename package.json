@@ -5,7 +5,7 @@
     "access": "public",
     "registry": "https://npm.pkg.github.com/@yingjie0904"
   },
-  "version": "0.2.4",
+  "version": "0.2.6",
   "private": false,
   "dependencies": {
     "axios": "^0.20.0",
