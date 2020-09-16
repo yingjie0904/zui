@@ -6,12 +6,13 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxiKw kLKMdo"
+        class="sc-AxiKw gMdgbp"
         data-testid="avatar-div"
       >
         <div
           aria-hidden="true"
-          class="sc-AxhCb jWsrSR"
+          class="sc-AxhCb juNiAJ"
+          data-testid="avatar-username"
         >
           l
         </div>
@@ -20,12 +21,13 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxiKw kLKMdo"
+      class="sc-AxiKw gMdgbp"
       data-testid="avatar-div"
     >
       <div
         aria-hidden="true"
-        class="sc-AxhCb jWsrSR"
+        class="sc-AxhCb juNiAJ"
+        data-testid="avatar-username"
       >
         l
       </div>
@@ -91,7 +93,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxiKw cYuCaB"
+        class="sc-AxiKw ffUcIQ"
         data-testid="avatar-div"
       >
         <svg
@@ -112,7 +114,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxiKw cYuCaB"
+      class="sc-AxiKw ffUcIQ"
       data-testid="avatar-div"
     >
       <svg
@@ -190,12 +192,13 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxiKw kLKMdo"
+        class="sc-AxiKw gMdgbp"
         data-testid="avatar-div"
       >
         <div
           aria-hidden="true"
-          class="sc-AxhCb jWsrSR"
+          class="sc-AxhCb juNiAJ"
+          data-testid="avatar-username"
         >
           y
         </div>
@@ -204,12 +207,13 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxiKw kLKMdo"
+      class="sc-AxiKw gMdgbp"
       data-testid="avatar-div"
     >
       <div
         aria-hidden="true"
-        class="sc-AxhCb jWsrSR"
+        class="sc-AxhCb juNiAJ"
+        data-testid="avatar-username"
       >
         y
       </div>
